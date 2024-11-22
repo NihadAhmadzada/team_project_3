@@ -156,6 +156,151 @@ nav .hiddenNavbar ul li a:hover {
     transform: translateX(0) !important;
   }
 }
+.contact_container {
+  max-width: 900px;
+  margin: 0 auto;
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  justify-content: center;
+  gap: 100px;
+  padding: 0 20px;
+}
+.contact_container .contact_ls {
+  display: flex;
+  flex-direction: column;
+}
+.contact_container .contact_ls .name {
+  display: flex;
+  gap: 20px;
+}
+.contact_container .contact_ls .name div {
+  display: flex;
+  flex-direction: column;
+}
+.contact_container .contact_ls input,
+.contact_container .contact_ls textarea {
+  padding: 6px 12px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: rgb(73, 80, 87);
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(206, 212, 218);
+  margin: 10px 0 20px;
+}
+.contact_container .contact_ls input:focus,
+.contact_container .contact_ls textarea:focus {
+  border: 1px solid rgb(32, 201, 151);
+  outline: none;
+}
+.contact_container .contact_ls button {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 8px 24px;
+  font-size: 1rem;
+  line-height: 1.5;
+  background-color: rgb(32, 201, 151);
+  border: 1px solid rgb(32, 201, 151);
+  color: #fff;
+  display: flex;
+  align-self: flex-start;
+}
+.contact_container .contact_rs div {
+  margin-bottom: 24px;
+}
+.contact_container .contact_rs div h3 {
+  line-height: 1.7;
+  color: rgb(77, 77, 77);
+  font-weight: 700;
+  font-size: 1rem;
+}
+.contact_container .contact_rs div p {
+  line-height: 1.7;
+  color: rgb(32, 201, 151);
+  font-weight: 300;
+  font-size: 1rem;
+}
+.contact_container .contact_rs .contact_rs_adress p {
+  color: rgb(77, 77, 77);
+  max-width: 150px;
+}
+
+@media only screen and (max-width: 768px) {
+  .contact_container {
+    max-width: auto;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    gap: 30px;
+  }
+  .contact_container .contact_ls {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact_container .contact_ls .name {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+  }
+  .contact_container .contact_ls .name div {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact_container .contact_ls input,
+  .contact_container .contact_ls textarea {
+    padding: 6px 12px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: rgb(73, 80, 87);
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(206, 212, 218);
+    margin: 10px 0 20px;
+  }
+  .contact_container .contact_ls input:focus,
+  .contact_container .contact_ls textarea:focus {
+    border: 1px solid rgb(32, 201, 151);
+    outline: none;
+  }
+  .contact_container .contact_ls button {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 8px 24px;
+    font-size: 1rem;
+    line-height: 1.5;
+    background-color: rgb(32, 201, 151);
+    border: 1px solid rgb(32, 201, 151);
+    color: #fff;
+    display: flex;
+    align-self: flex-start;
+  }
+  .contact_container .contact_rs div {
+    margin-bottom: 24px;
+  }
+  .contact_container .contact_rs div h3 {
+    line-height: 1.7;
+    color: rgb(77, 77, 77);
+    font-weight: 700;
+    font-size: 1rem;
+  }
+  .contact_container .contact_rs div p {
+    line-height: 1.7;
+    color: rgb(32, 201, 151);
+    font-weight: 300;
+    font-size: 1rem;
+  }
+  .contact_container .contact_rs .contact_rs_adress p {
+    color: rgb(77, 77, 77);
+    max-width: 100%;
+  }
+}
 .home_hero_section_box {
   background-position: center;
   background-size: cover;
