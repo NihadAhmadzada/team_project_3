@@ -1,12 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./assets/scss/services.scss">
-</head>
-<body>
-    
-</body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/style/css/main.css" />
+  </head>
+  <body>
+    <!-- NAVBAR START  -->
+    <nav class="">
+      <div class="flex">
+        <div class="navLogo">
+          <a href="home.html">Photon</a>
+        </div>
+        <div class="navLinks">
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <div class="dropdown">
+              <li>
+                <a href="about.html "
+                  >About<i class="fa-solid fa-angle-down"></i
+                ></a>
+              </li>
+              <div class="dropdown-content">
+                <a href="#">Team</a>
+                <a href="#">Pricing</a>
+                <a href="#">FAQ</a>
+                <a href="#">More</a>
+              </div>
+            </div>
+
+            <li><a href="services.html" class="added">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+          </ul>
+        </div>
+        <div class="nav_Social">
+          <a href="#"><i class="fab fa-facebook-square"></i></a>
+          <a href="#"><i class="fab fa-twitter-square"></i></a>
+          <a href="#"><i class="fab fa-instagram-square"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <div class="hamburger">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+      <!-- HIDDEN NAVBAR START  -->
+      <div class="hiddenNavbar">
+        <div class="hiddenNavbar_close">
+          <h2><i class="fa-solid fa-x"></i></h2>
+        </div>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html" class="added">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </div>
+      <!-- HIDDEN NAV END  -->
+    </nav>
+    <!-- NAVBAR END  -->
+    <!-- FOOTER START -->
+    <footer>
+      <div class="copy_Write">
+        <p>&copy; 2022 Photon. All rights reserved.</p>
+      </div>
+    </footer>
+    <!-- FOOTER END -->
+    <script src="assets/js/navbar.js"></script>
+  </body>
 </html>
