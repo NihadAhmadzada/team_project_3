@@ -1,5 +1,5 @@
-section{
-    max-width: 1100px;
+.ourMission {
+  max-width: 1100px;
   padding: 0 20px;
   margin: 0 auto;
   display: flex;
@@ -10,111 +10,101 @@ section{
   padding-top: 100px;
   padding-bottom: 100px;
 }
-.name_section{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.name_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.name{
-    h1{
-        font-size: 60px;
-    }
+.name {
+  h1 {
+    font-size: 60px;
+  }
 }
 
-._{
-    border: 1px solid black;
-    width: 150px;
-    
+._ {
+  border: 1px solid black;
+  width: 150px;
 }
-.picture{
-   img{
-    
-
+.picture {
+  img {
     max-width: 500px;
-   
-   }
+  }
 }
-.pic_about{
-    color: gray;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+.pic_about {
+  color: gray;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
-.out_mission{
-display: flex;
-gap: 100px;
+.out_mission {
+  display: flex;
+  gap: 100px;
+}
+.mission_about {
+  //  text-align: justify;
+  line-height: 1.7;
+}
 
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
+  gap: 25px;
+  img {
+    max-width: 35%;
+    border-radius: 50%;
+  }
 }
-.mission_about{
-//  text-align: justify;
+
+.person_about {
+  p {
+    // width: 30%;
+    text-align: center;
     line-height: 1.7;
-    
+  }
 }
 
-.card{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-   
-   gap: 25px;
-    img{
-        max-width: 35%;
-        border-radius: 50%
-    }
+.icons {
+  display: flex;
+  gap: 50px;
+  i {
+    color: #20c997;
+    font-size: 20px;
+  }
 }
-
-.person_about{
-    p{
-        // width: 30%;
-        text-align: center;
-        line-height: 1.7;
-    }
-}
-
-.icons{
-    display: flex;
-    gap: 50px;
-    i{
-        color: #20c997;
-        font-size: 20px;
-    }
-}
-.icons{
-    i:hover{
+.icons {
+  i:hover {
     cursor: pointer;
-   color: #0f6349;
-    }
+    color: #0f6349;
+  }
 }
 
-.cards{
-    display: flex;
-justify-content: center;
-align-items: center;
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media only screen and (max-width: 800px) {
-    .cards {
-     display: flex;
-     flex-direction: column;
+  .cards {
+    display: flex;
+    flex-direction: column;
     gap: 40px;
-    }
-    .picture{
-        img{
-         
-     
-width: 100%;        
-        }
-     }
   }
+  .picture {
+    img {
+      width: 100%;
+    }
+  }
+}
 
-  @media only screen and (max-width: 800px) {
-    .out_mission {
-     display: flex;
-     flex-direction: column;
-    
-    }
+@media only screen and (max-width: 800px) {
+  .out_mission {
+    display: flex;
+    flex-direction: column;
   }
+}

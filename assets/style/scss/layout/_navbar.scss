@@ -101,6 +101,7 @@ nav {
   //   transform: translateX(0) !important;
   // }
   .hiddenNavbar {
+    z-index: 999;
     box-shadow: -20px 0 30px rgba(0, 0, 0, 0.1);
     padding-top: 100px;
     padding-inline: 20px;
