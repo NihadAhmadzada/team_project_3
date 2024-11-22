@@ -49,6 +49,7 @@ nav {
         transform: translateY(0);
       }
       .dropdown-content {
+        z-index: 999;
         display: flex;
         flex-direction: column;
         font-size: 14px;
@@ -58,7 +59,7 @@ nav {
         position: absolute;
         background-color: #f1f1f1;
         min-width: 160px;
-        z-index: 1;
+        z-index: 100;
         border-top: 5px solid #20c997;
         a {
           width: 100%;

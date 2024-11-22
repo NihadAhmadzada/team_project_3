@@ -59,6 +59,7 @@ nav .navLinks ul .dropdown:hover .dropdown-content {
   transform: translateY(0);
 }
 nav .navLinks ul .dropdown-content {
+  z-index: 999;
   display: flex;
   flex-direction: column;
   font-size: 14px;
@@ -68,7 +69,7 @@ nav .navLinks ul .dropdown-content {
   position: absolute;
   background-color: #f1f1f1;
   min-width: 160px;
-  z-index: 1;
+  z-index: 100;
   border-top: 5px solid #20c997;
 }
 nav .navLinks ul .dropdown-content a {
@@ -154,6 +155,59 @@ nav .hiddenNavbar ul li a:hover {
   .show {
     transition: transform 200ms linear;
     transform: translateX(0) !important;
+  }
+}
+main .gallery .heading {
+  text-align: center;
+  position: relative;
+  margin-block: 60px;
+}
+main .gallery .heading h1 {
+  font-size: clamp(2.5rem, 0rem + 5vw, 3.75rem);
+  font-weight: 500;
+}
+main .gallery .heading::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  width: 20%;
+  height: 2px;
+  background-color: #000;
+  transform: translateX(-50%);
+}
+main .gallery .images {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+}
+main .gallery .images .image {
+  padding: 10px;
+}
+main .gallery .images .image img {
+  cursor: pointer;
+  width: 100%;
+  display: block;
+}
+
+@media (max-width: 1024px) {
+  .images {
+    grid-template-columns: repeat(4, 1fr) !important;
+  }
+}
+@media (max-width: 800px) {
+  .images {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+}
+@media (max-width: 500px) {
+  .images {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+@media (max-width: 400px) {
+  .images {
+    grid-template-columns: repeat(1, 1fr) !important;
   }
 }
 footer .copy_Write {
