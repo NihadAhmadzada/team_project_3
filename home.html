@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,7 +18,13 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
     <link rel="stylesheet" href="./assets/style/css/main.css" />
+    <title>Photon</title>
   </head>
   <body>
     <!-- NAVBAR START  -->
@@ -76,6 +83,78 @@
       <!-- HIDDEN NAV END  -->
     </nav>
     <!-- NAVBAR END  -->
+    <main>
+      <!-- HERO SECTION START  -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div
+            class="home_hero_section_box swiper-slide home_hero_section_box_nature"
+          >
+            <h2>Nature</h2>
+            <button>
+              <a href="./gallery.html">MORE PHOTOS</a>
+            </button>
+            <div class="square"></div>
+          </div>
+          <div
+            class="home_hero_section_box home_hero_section_box_portrait swiper-slide"
+          >
+            <h2>Portrait</h2>
+            <button>
+              <a href="./gallery.html">MORE PHOTOS</a>
+            </button>
+          </div>
+
+          <div
+            class="home_hero_section_box home_hero_section_box_people swiper-slide"
+          >
+            <h2>People</h2>
+            <button>
+              <a href="./gallery.html">MORE PHOTOS</a>
+            </button>
+          </div>
+
+          <div
+            class="home_hero_section_box home_hero_section_box_architecture swiper-slide"
+          >
+            <h2>Architecture</h2>
+            <button>
+              <a href="./gallery.html">MORE PHOTOS</a>
+            </button>
+          </div>
+
+          <div
+            class="home_hero_section_box home_hero_section_box_animals swiper-slide"
+          >
+            <h2>Animals</h2>
+            <button>
+              <a href="./gallery.html">MORE PHOTOS</a>
+            </button>
+          </div>
+
+          <div
+            class="home_hero_section_box home_hero_section_box_sports swiper-slide"
+          >
+            <h2>Sports</h2>
+            <button>
+              <a href="./gallery.html">MORE PHOTOS</a>
+            </button>
+          </div>
+
+          <div
+            class="home_hero_section_box home_hero_section_box_travel swiper-slide"
+          >
+            <h2>Travel</h2>
+            <button>
+              <a href="./gallery.html">MORE PHOTOS</a>
+            </button>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+      <!-- HERO SECTION END  -->
+    </main>
     <!-- FOOTER START -->
     <footer>
       <div class="copy_Write">
@@ -84,6 +163,8 @@
     </footer>
     <!-- FOOTER END -->
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/app.js"></script>
     <script src="assets/js/navbar.js"></script>
   </body>
 </html>
