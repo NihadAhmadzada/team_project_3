@@ -155,4 +155,8 @@ nav .hiddenNavbar ul li a:hover {
     transition: transform 200ms linear;
     transform: translateX(0) !important;
   }
+}
+footer .copy_Write {
+  text-align: center;
+  padding-block: 80px;
 }/*# sourceMappingURL=main.css.map */
