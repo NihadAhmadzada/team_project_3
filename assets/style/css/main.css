@@ -167,7 +167,6 @@ nav .hiddenNavbar ul li a:hover {
   justify-content: center;
   align-items: center;
   gap: 100px;
-  padding-top: 100px;
   padding-bottom: 100px;
 }
 
@@ -347,21 +346,21 @@ nav .hiddenNavbar ul li a:hover {
     max-width: 100%;
   }
 }
-main .gallery .heading {
+main .heading {
   text-align: center;
   position: relative;
   margin-block: 60px;
 }
-main .gallery .heading h1 {
+main .heading h1 {
   font-size: clamp(2.5rem, 0rem + 5vw, 3.75rem);
   font-weight: 500;
 }
-main .gallery .heading::after {
+main .heading::after {
   content: "";
   position: absolute;
   bottom: -10px;
   left: 50%;
-  width: 20%;
+  width: 100px;
   height: 2px;
   background-color: #000;
   transform: translateX(-50%);
@@ -527,4 +526,4 @@ main .gallery .images .image img {
 footer .copy_Write {
   text-align: center;
   padding-block: 80px;
-}
+}/*# sourceMappingURL=main.css.map */

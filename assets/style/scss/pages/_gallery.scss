@@ -1,24 +1,24 @@
 main {
-  .gallery {
-    .heading {
-      text-align: center;
-      position: relative;
-      margin-block: 60px;
-      h1 {
-        font-size: clamp(2.5rem, 0rem + 5vw, 3.75rem);
-        font-weight: 500;
-      }
-      &::after {
-        content: "";
-        position: absolute;
-        bottom: -10px;
-        left: 50%;
-        width: 20%;
-        height: 2px;
-        background-color: #000;
-        transform: translateX(-50%);
-      }
+  .heading {
+    text-align: center;
+    position: relative;
+    margin-block: 60px;
+    h1 {
+      font-size: clamp(2.5rem, 0rem + 5vw, 3.75rem);
+      font-weight: 500;
     }
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      width: 100px;
+      height: 2px;
+      background-color: #000;
+      transform: translateX(-50%);
+    }
+  }
+  .gallery {
     .images {
       display: grid;
       grid-template-columns: repeat(6, 1fr);
